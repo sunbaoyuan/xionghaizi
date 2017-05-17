@@ -2,27 +2,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/mine.css">
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
-<style>
-.ui-bar-f
-{
-background-color:#90EE90;
-}
-.quit{float: right;}
-a:link{text-decoration:none; }
-.word{font-size: 13px}
-</style>
 
 <body>
 
 <div data-role="page" id="pageone">
 	<div data-role="header" data-theme="f">
   		<h1>设置</h1>
-  		<a data-ajax="false" href="mine.html" style="border-radius:10px">返回</a>
+  		<a data-ajax="false" href="mine.html" class="fanhui">返回</a>
   	</div>
 
   	<div data-role="content">
@@ -42,7 +35,7 @@ a:link{text-decoration:none; }
 
       <ul data-role="listview" data-inset="true">
         <li><a href="#page4">帮助与反馈</a></li>
-        <li><a href="#page5">版本 <span style="float:right">1.0.1</span></a></li>
+        <li><a href="#page5">版本 <span class="you">1.0.1</span></a></li>
       </ul>
     </div>
 </div>
@@ -64,7 +57,7 @@ a:link{text-decoration:none; }
   </div>
   <div data-role="content">
       <div class="logo">
-        <div><p style="text-align:center"><img src="images/head.jpg"  alt="logo" /></p></div>
+        <div><p class="lo"><img src="images/head.jpg"  alt="logo" /></p></div>
         <p style="text-align:center" >熊孩子</p>
       </div>
   </div>
