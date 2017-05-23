@@ -1,10 +1,9 @@
-#pageone{
+			#pageone{
     			background-image: url(../images/body.jpg);
     			background-repeat: no-repeat;
     			background-size: cover;
     		}
     		#col{
-    			/*background-color: #99FF99;*/
                 background:rgba(144,238,144,0.7);
     		}
     		#one{
