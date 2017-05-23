@@ -113,5 +113,8 @@
 	-o-border-image:url(scrollbar.png) 6 6 6 6;
 	border-image:url(scrollbar.png) 6 6 6 6;
 }
+.a{
+	width: 100px;
+}
 /*------------- E 以上css主要是仿IOS滚动条样式  -------------*/
 
