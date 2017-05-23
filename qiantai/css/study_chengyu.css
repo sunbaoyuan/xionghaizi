@@ -1,5 +1,4 @@
 #col{
-    			/*background-color: #99FF99;*/
     			background:rgba(50,50,50,0.6);
     		}
     		#pageone{
@@ -11,7 +10,6 @@
     		.result{
     			width: 60%;
     			height: 200px;
-    			/*border:1px solid black;*/
     			margin-left:22%;
     			margin-top: 60%;
     		}
