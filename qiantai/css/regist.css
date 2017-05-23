@@ -1,0 +1,54 @@
+#col{
+/*    			background-color: #99FF99;*/
+    			background:rgba(0,0,0,0.0);
+    			border: none;
+    		}
+    		#pageone{
+    			background-image: url(../images/2.jpg);
+    			background-size: cover;
+                height: 100%;
+    		}
+    		#img{
+
+			    margin-top: 13%;
+			    margin-left: 35%;
+    		}
+    		#text{
+    			width: 70%;
+    			border-bottom:1px solid gray;
+    			margin-left: 15%;
+    			margin-top: 6%;
+    			background:url(../images/userbg.png) no-repeat 0 center;
+    		}
+    		
+    		#text1{
+    			width: 70%;
+    			border-bottom:1px solid gray;
+    			margin-left: 15%;
+    			margin-top: 8%;
+    			background:url(../images/pswbg.png) no-repeat 0 center;
+    		}
+            #text2{
+                width: 70%;
+                border-bottom:1px solid gray;
+                margin-left: 15%;
+                margin-top: 8%;
+                background:url(../images/pswbg.png) no-repeat 0 center;
+            }
+    		#checkbox{
+    			width: 18px;
+    			height: 18px;
+
+    		}
+    		::-webkit-input-placeholder{
+    			color:white;
+    		}
+    		:-moz-placeholder{
+    			color: white;
+    		}
+    		::-moz-placeholder{
+    			color: white;
+    		}
+    		:-ms-input-placeholder{
+    			color: white;
+    		}
