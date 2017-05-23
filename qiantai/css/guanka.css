@@ -1,0 +1,41 @@
+#col{
+    			/*background-color: #99FF99;*/
+                background:rgba(144,238,144,0.3);
+    		}
+    		#pageone{
+    			background-image: url(../images/guankabg.jpg);
+    			background-size: cover;
+                height: 100%;
+    		}
+    		#cont a{
+    			color: white;
+    			text-decoration: none;
+    		}	
+    		#seven{
+    			margin-top: 54%;
+    			margin-left: 29%;
+    		}
+    		#six{
+    			margin-top: 15%;
+    			margin-left: 39%;
+    		}
+    		#five{
+    			margin-top: 8%;
+    			margin-left: 57%;
+    		}
+    		#four{
+    			margin-top: 8%;
+    			margin-left: 75%;
+    		}
+    		#three{
+    			margin-top: 8%;
+    			margin-left: 53%;
+    		}
+    		#two{
+    			margin-top: 8%;
+    			margin-left: 33%;
+    		}
+    		#one{
+    			margin-top: 7%;
+    			margin-left: 12%;
+    		}
