@@ -1,0 +1,157 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>熊孩子后台管理系统-挑战管理</title>
+
+<link href="css/public.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+<div id="dcWrap"> <div id="dcHead">
+ <div id="head">
+  <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="logo" height="60"></a></div>
+  <div class="nav">
+   <ul>熊孩子后台管理系统
+   </ul>
+   <ul class="navRight">
+    <li class="noRight"><a href="#">您好，admin</a>
+     
+    </li>
+    <li class="noRight"><a href="login.html">退出</a></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<!-- dcHead 结束 --> 
+<div id="dcLeft"><div id="menu">
+ <ul class="top">
+  <li><a href="index.html"><em style="text-align:center;">首页</em></a></li>
+ </ul>
+
+<ul>
+  <li><a href="manager.html"><em style="text-align:center;">管理员管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="user.html"><em style="text-align:center;">用户管理</em></a></li>
+ </ul>
+<ul>
+  <li><a href="story.html"><em style="text-align:center;">故事管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="dekaron.html"><em style="text-align:center;">挑战管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="study.html"><em style="text-align:center;">学习管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="comment.html"><em style="text-align:center;">评论管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="share.html"><em style="text-align:center;">分享管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="integral.html"><em style="text-align:center;">积分管理</em></a></li>
+ </ul>
+</div></div>
+ <div id="dcMain">
+   <!-- 当前位置 -->
+<div id="urHere"><a href="index.html">首页</a><b>></b><strong>挑战管理</strong> </div>   
+<div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+        <h3><a href="add_dekaron.html?rec=add" class="actionBtn add">添加题目</a>题目列表</h3>
+  
+        <div id="list">
+    <form name="action" method="post" action="#">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+        <th width="" align="center"><input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
+        <th width="" align="center">ID</th>
+        <th align="center">类型</th>
+        <th width="" align="center">题目</th>
+        <th width="" align="center">答案</th>
+        <th width="" align="center">添加日期</th>
+        <th width="" align="center">操作</th>
+      </tr>
+
+      <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
+        <td align="center">5</td>
+        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
+        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
+        <td align="center">X</td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+        <a href="edit_dekaron.html">编辑</a> | <a href="#">删除</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
+        <td align="center">4</td>
+        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
+        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
+        <td align="center">X</td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+        <a href="edit_dekaron.html">编辑</a> | <a href="#">删除</a>
+        </td>
+      </tr>
+
+       <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
+        <td align="center">3</td>
+        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
+        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
+        <td align="center">X</td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+       <a href="edit_dekaron.html">编辑</a> | <a href="#">删除</a>
+        </td>
+      </tr>
+
+       <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
+        <td align="center">2</td>
+        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
+        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
+        <td align="center">X</td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+        <a href="edit_dekaron.html">编辑</a> | <a href="#">删除</a>
+        </td>
+      </tr>
+
+       <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
+        <td align="center">1</td>
+        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
+        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
+        <td align="center">X</td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+        <a href="edit_dekaron.html">编辑</a> | <a href="#">删除</a>
+        </td>
+      </tr>
+
+                
+
+      </table>
+    </form>
+    </div>
+    <div class="clear"></div>
+    <div class="pager">总计 5 个记录，共 1 页，当前第 1 页 | <a href="product.php?page=1">第一页</a> 上一页 下一页 <a href="product.php?page=1">最末页</a></div>               </div>
+ </div>
+
+ <div class="clear"></div>
+<div id="dcFooter">
+ <div id="footer">
+  <div class="line"></div>
+  <ul>
+   熊孩子后台管理系统
+  </ul>
+ </div>
+</div><!-- dcFooter 结束 -->
+<div class="clear"></div> </div>
+
+</body>
+</html>
