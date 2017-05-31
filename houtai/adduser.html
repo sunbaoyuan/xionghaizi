@@ -1,0 +1,111 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>熊孩子后台管理系统-添加用户</title>
+
+<link href="css/public.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+<div id="dcWrap"> <div id="dcHead">
+ <div id="head">
+  <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="logo" height="60"></a></div>
+  <div class="nav">
+   <ul>熊孩子后台管理系统
+   </ul>
+   <ul class="navRight">
+    <li class="noRight"><a href="#">您好，admin</a>
+     
+    </li>
+    <li class="noRight"><a href="login.html">退出</a></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<!-- dcHead 结束 --> 
+<div id="dcLeft"><div id="menu">
+ <ul class="top">
+  <li><a href="index.html"><em style="text-align:center;">首页</em></a></li>
+ </ul>
+
+<ul>
+  <li><a href="manager.html"><em style="text-align:center;">管理员管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="user.html"><em style="text-align:center;">用户管理</em></a></li>
+ </ul>
+<ul>
+  <li><a href="story.html"><em style="text-align:center;">故事管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="dekaron.html"><em style="text-align:center;">挑战管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="study.html"><em style="text-align:center;">学习管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="comment.html"><em style="text-align:center;">评论管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="share.html"><em style="text-align:center;">分享管理</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="integral.html"><em style="text-align:center;">积分管理</em></a></li>
+ </ul>
+</div></div>
+ <div id="dcMain"> <!-- 当前位置 -->
+<div id="urHere"><a href="index.html">首页</a><b>></b><strong>用户管理</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3><a href="user.html" class="actionBtn">返回列表</a>用户列表</h3>
+            <form action="manager.html" method="post">
+     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+       <td width="100" align="center">用户名</td>
+       <td>
+        <input type="text" name="user_name" size="40" class="inpMain" />
+       </td>
+      </tr>
+      
+      <tr>
+       <td align="center">密码</td>
+       <td>
+        <input type="password" name="password" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="center">确认密码</td>
+       <td>
+        <input type="password" name="password_confirm" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="center">添加时间</td>
+       <td>
+        <input type="text" name="sort" value="2016-11-26" size="5" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <input type="hidden" name="token" value="5a58b748" />
+        <input type="submit" name="submit" class="btn" value="提交" />
+       </td>
+      </tr>
+     </table>
+    </form>
+                 
+ </div>
+
+ <div class="clear"></div>
+<div id="dcFooter">
+ <div id="footer">
+  <div class="line"></div>
+  <ul>
+   熊孩子后台管理系统
+  </ul>
+ </div>
+</div><!-- dcFooter 结束 -->
+<div class="clear"></div> </div>
+
+</body>
+</html>
