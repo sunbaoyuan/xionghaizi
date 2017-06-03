@@ -24,13 +24,13 @@
 	            </div>
 
 	            <div id="text">
-	            <input data-role="none" type="text" id="usename" name="username" placeholder="&nbsp;&nbsp;请输入账号" style="background-color:transparent;border:none;margin-left:9%"/>
+	            <input data-role="none" type="text" id="username" name="username" placeholder="&nbsp;&nbsp;请输入账号" style="background-color:transparent;border:none;margin-left:9%" onblur="userblur()"/><span id="usererror" style="font-size:10px;font-weight:bold" ></span>
 	            </div>
 	            <div id="text1">
-	            <input data-role="none" type="password" id="password" name="password" placeholder="&nbsp;&nbsp;设置密码" style="background-color:transparent;border:none;margin-left:9%"/>
+	            <input data-role="none" type="password" id="password" name="password" placeholder="&nbsp;&nbsp;设置密码" style="background-color:transparent;border:none;margin-left:9%" onblur="pwdblur()"/><span id="pwderror" style="font-size:10px;font-weight:bold"></span>
 	            </div>
                  <div id="text2">
-                <input data-role="none" type="password" id="password" name="password" placeholder="&nbsp;&nbsp;确认密码" style="background-color:transparent;border:none;margin-left:9%"/>
+                <input data-role="none" type="password" id="password" name="password" placeholder="&nbsp;&nbsp;确认密码" style="background-color:transparent;border:none;margin-left:9%" onblur="repwdblur()"/><span id="repwderror" style="font-size:10px;font-weight:bold;"></span>
                 </div>
 	           
 	            <br/>
@@ -42,4 +42,49 @@
 	        
 	    </div> 
 	</body>
+	<script type="text/javascript">
+		function userblur(){
+			var username=document.getElementById("username").value;
+			if(username==""){
+				document.getElementById("usererror").innerHTML="用户名不能为空";
+				document.getElementById("usererror").style.color="red";
+
+			}
+			else if(username.length>0&&username.length<6||username.length>16){
+				document.getElementById("usererror").innerHTML="用户名应为6到16位";
+				document.getElementById("usererror").style.color="red";
+			}
+			else{
+				document.getElementById("usererror").innerHTML="用户名可以使用";
+				document.getElementById("usererror").style.color="green";
+			}
+		}
+		function pwdblur(){
+			var password=document.getElementById("password").value;
+			if(password==""){
+				document.getElementById("pwderror").innerHTML="密码不能为空";
+				document.getElementById("pwderror").style.color="red";
+			}
+			else if(password.length>0&&password.length<6){
+				document.getElementById("pwderror").innerHTML="密码至少为6位";
+				document.getElementById("pwderror").style.color="red";
+			}
+			else{
+				document.getElementById("pwderror").innerHTML="密码可以使用";
+				document.getElementById("pwderror").style.color="green";
+			}
+		}
+		function repwdblur(){
+			var password=document.getElementById("password").value;
+			var repassword=document.getElementById("repassword").value;
+			if(repassword!=password){
+				document.getElementById("repwderror").innerHTML="两次密码不一致";
+				document.getElementById("repwderror").style.color="red";
+			}
+			else{
+				document.getElementById("repwderror").innerHTML="输入一致";
+				document.getElementById("repwderror").style.color="green";
+			}
+		}
+	</script>
 </html>
