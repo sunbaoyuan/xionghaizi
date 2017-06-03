@@ -24,10 +24,10 @@
 	            </div>
 
 	            <div id="text">
-	            <input data-role="none" type="text" id="usename" name="username" placeholder="&nbsp;&nbsp;请输入账号" style="background-color:transparent;border:none;margin-left:9%"/>
+	            <input data-role="none" type="text" id="username" name="username" placeholder="&nbsp;&nbsp;请输入账号" style="background-color:transparent;border:none;margin-left:9%"onblur="userblur()"/><span id="usererror" style="color:red;font-size:10px;font-weight:bold"></span>
 	            </div>
 	            <div id="text1">
-	            <input data-role="none" type="password" id="password" name="password" placeholder="&nbsp;&nbsp;请输入密码" style="background-color:transparent;border:none;margin-left:9%"/>
+	            <input data-role="none" type="password" id="password" name="password" placeholder="&nbsp;&nbsp;请输入密码" style="background-color:transparent;border:none;margin-left:9%" onblur="pwdblur()"/><span id="pwderror" style="color:red;font-size:10px;font-weight:bold"></span>
 	            </div>
 	            <div style="margin-left:15%;margin-top:1%;width:30%;float:left">
 	            	<input  type="checkbox" id="checkbox" >
@@ -45,4 +45,24 @@
 	        
 	    </div> 
 	</body>
+	<script type="text/javascript">
+		function userblur(){
+			var username=document.getElementById("username").value;
+			if(username==""){
+				document.getElementById("usererror").innerHTML="用户名不能为空";
+			}
+			else{
+				document.getElementById("usererror").innerHTML="";
+			}
+		}
+		function pwdblur(){
+			var password=document.getElementById("password").value;
+			if(password==""){
+				document.getElementById("pwderror").innerHTML="密码不能为空";
+			}
+			else{
+				document.getElementById("pwderror").innerHTML="";
+			}
+		}
+	</script>
 </html>
