@@ -147,7 +147,7 @@
 
 	    <div data-role="page" id="six" class="bg">
 	    	<div data-role="header" id="col" data-position="fixed">
-	    		<a href="gushi_guanka.html" rel="external" data-role="button" >返回</a>
+	    		<a  rel="external" data-role="button" onclick="getgrade()">返回</a>
 	            <h1 style="color:white">最终得分</h1>
 	            <a  href="javascript:;" rel="external" data-role="button" id="fenxiang" onclick="pageName()">分享</a>
 	        </div>
@@ -169,6 +169,12 @@
 		        var name= c.slice(0, 1);
 		        window.location.href="xiaoxi.html?"+name;
 		     }  
+		     function getgrade(){
+	    		var a=document.getElementById("aaa").innerHTML;
+	    		
+	    		// alert(a);
+	    		window.location.href="gushi_guanka.html?"+a;
+	    	}
 	    	count=0;
 			function GetData1()
 			{
