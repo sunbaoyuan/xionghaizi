@@ -1,0 +1,45 @@
+#col{
+    			/*background-color: #99FF99;*/
+    			background:rgba(55,55,55,0.3);
+    		}
+    	
+    		#pageone{
+    			background-image: url(../images/studybg.jpeg);
+    			background-repeat: no-repeat;
+    			background-size: cover;
+    			height: 100%;
+    		}
+    		#sear1{
+    			width: 74%;
+    			float: left;
+    			margin: 3%;
+    		}
+    		#sear2{
+    			width: 20%;
+    			float: left;
+    			margin-top: 1%;
+    		}
+    		#story{
+    			width: 100%;
+    			float: left;
+    		}
+    		#story li{
+    			line-height: 18px;
+    			background: rgba(255,255,255,0.0);
+    			border: none;
+    			border-bottom: 1px solid white;
+    		}
+    		#story p{
+    			margin-right: 1%;
+    			margin-bottom: 3px;
+    			font-size: 14px;
+    		}
+    		#story a{
+    			color: white;
+    			font-weight: normal;
+    			
+    		}
+    		#icon{
+    			float: right;
+    			color: yellow;
+    		}

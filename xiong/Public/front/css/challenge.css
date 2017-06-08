@@ -1,0 +1,58 @@
+            #col{
+    			/*background-color: #99FF99;*/
+    			background:rgba(80,80,80,0.3);
+    		}
+    		#pageone{
+    			background-image: url(../images/challengebg.jpg);
+    			background-size: cover;
+    		}
+    		a{
+    			text-decoration: none;
+    		}
+    		.gushi{
+    			float: left;
+    			margin-left:38.5%;
+    			margin-top:56%;
+    			font-size:20px;
+    			color:black;
+    			width:25%;
+    			height:110px;
+    			border:1px solid rgba(255,255,255,0);
+    		}
+    		.shuxue{
+                float: left;
+    			margin-left:11%;
+                margin-top: 1%;
+    			font-size:20px;
+    			color:black;
+    			width:25%;
+    			height:110px;
+    			border:1px solid rgba(255,255,255,0);
+    		}
+    		.yingyu{
+                float: left;
+                margin-left: 30%;
+                margin-top: 1%;
+    			font-size:20px;
+    			color:black;
+    			width:25%;
+    			height:110px;
+    			border:1px solid rgba(255,255,255,0);
+    		}
+    		.chengyu{
+                float: left;
+                margin-top: 2%;
+                margin-left: 38%;
+    			font-size:20px;
+    			color:black;
+    			width:25%;
+    			height:110px;
+    			border:1px solid rgba(255,255,255,0);
+    		}
+    		.div{
+    			width:40%;
+    			height:25px;
+    			border:1px solid rgba(255,255,255,0);
+    			margin-top:85px;
+    			margin-left:31%;
+    		}

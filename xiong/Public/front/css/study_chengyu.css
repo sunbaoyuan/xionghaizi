@@ -1,0 +1,50 @@
+#col{
+    			/*background-color: #99FF99;*/
+    			background:rgba(50,50,50,0.6);
+    		}
+    		#pageone{
+    			background-image: url(../images/studybg.jpeg);
+    			background-repeat: no-repeat;
+    			background-size: cover;
+    			height: 100%;
+    		}
+    		.result{
+    			width: 60%;
+    			height: 200px;
+    			/*border:1px solid black;*/
+    			margin-left:22%;
+    			margin-top: 60%;
+    		}
+    		.cheng{
+    			font-weight: bolder;
+    			font-size: 25px;
+    		}
+    		.result a{
+    			color: black;
+    		}
+    		#story{
+    			width: 100%;
+    			float: left;
+    		}
+    		#story li{
+    			line-height: 18px;
+    			background: rgba(255,255,255,0.0);
+    			border: none;
+    			border-bottom: 1px solid white;
+    		}
+    		#story p{
+    			margin-bottom: 1px;
+    			font-size: 14px;
+    		}
+    		#story a{
+    			color: white;
+    			font-weight: normal;
+    			text-decoration: none;
+
+    		}
+    		.bg{
+    			background-image: url(../images/study_gushibg.jpg);
+
+    			background-size: cover;
+    			height: 100%;
+    		}

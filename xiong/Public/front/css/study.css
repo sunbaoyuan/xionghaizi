@@ -1,0 +1,93 @@
+#col{
+    			/*background-color: #99FF99;*/
+                background:rgba(255,222,173,0.5);
+    		}
+    		#img{
+    			width: 100%;
+    			height: 250px;
+    			background-image: url(../images/study.jpg);
+    			background-size: cover;
+    			margin:0 auto;
+    		}
+    		#content{
+    			width: 100%;
+    			height: 390px;
+    			background-color: #DDDDDD;
+    		}
+    		#a1{
+    			margin:20%;
+    			height: 21%;
+    			background-image: url(../images/gushi.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		
+    		#a2{
+    			margin:20%;
+    			height: 80px;
+    			background-image: url(../images/chengyu.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		#a3{
+    			margin:20%;
+    			height: 21%;
+    			background-image: url(../images/hanzi.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		#a4{
+    			margin:20%;
+    			height: 21%;
+    			margin-top: 0px;
+    			background-image: url(../images/shuxue.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		#a5{
+    			margin:20%;
+    			height: 21%;
+    			margin-top: 0px;
+    			background-image: url(../images/yanse.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		#a6{
+    			margin:20%;
+    			height: 21%;
+    			margin-top: 0px;
+    			background-image: url(../images/danci.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		#a7{
+    			margin:20%;
+    			height: 21%;
+    			margin-top: 0px;
+    			background-image: url(../images/shucai.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		#a8{
+    			margin:20%;
+    			height: 21%;
+    			margin-top: 0px;
+    			background-image: url(../images/shuiguo.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		#a9{
+    			margin:20%;
+    			height: 21%;
+    			margin-top: 0px;
+    			background-image: url(../images/dongwu.jpg);
+    			background-size: cover;
+    			border-radius: 50%;
+    		}
+    		#wenzi a p{
+    			color: black;
+    			text-decoration: none;
+    			margin-top: -21%;
+    			text-align: center;
+
+    		}
