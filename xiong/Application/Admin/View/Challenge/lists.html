@@ -1,0 +1,51 @@
+
+ <div id="dcMain">
+   <!-- 当前位置 -->
+<div id="urHere"><a href="__MODULE__/Index/index.html">首页</a><b>></b><strong>挑战管理</strong> </div>   
+<div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3><a href="__MODULE__/Challenge/addchallenge" class="actionBtn add">添加题目</a>题目列表</h3>
+    <div id="list">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+        <th width="" align="center"><input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
+        <th width="" align="center">ID</th>
+        <th align="center">类型</th>
+        <th width="" align="center">题目</th>
+        <th width="" align="center">内容</th>
+        <th width="" align="center">答案</th>
+        <th width="" align="center">添加日期</th>
+        <th width="" align="center">操作</th>
+      </tr>
+
+      <volist name="challengelist" id="vo">
+      <tr>
+        <td align="center"><input type="checkbox" name="challengeid[]" value="{$vo.challengeid}" class="checkbox"/></td>
+        <td align="center">{$vo.challengeid}</td>
+        <td align="center">{$vo.typeccname}</td>
+        <td align="center">{$vo.challengename}</td>
+        <td align="center">{$vo.challengecontent}</td>
+        <td align="center">{$vo.challengeanswer}</td>
+        <td align="center">{$vo.addtime}</td>
+        <td align="center">
+        <a href="__MODULE__/Challenge/editchallenge/challengeid/{$vo.challengeid}">编辑</a> | <a href="__MODULE__/Challenge/delete/challengeid/{$vo.challengeid}">删除</a>
+        </td>
+      </tr>
+      </volist>
+
+    </table>
+    </form>
+    </div>
+    <div class="clear"></div>
+    <div class="pager">
+    {$page}
+    </div>               
+    </div>
+ </div>
+
+ <div class="clear"></div>
+
+
+<div class="clear"></div> </div>
+
+</body>
+</html>

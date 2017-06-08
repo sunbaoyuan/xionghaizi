@@ -1,0 +1,68 @@
+
+ <div id="dcMain"> <!-- 当前位置 -->
+<div id="urHere"><a href="__MODULE__/Index/index.html">首页</a><b>></b><strong>用户管理</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3><a href="__MODULE__/User/lists" class="actionBtn">返回列表</a>编辑用户</h3>
+    
+    <form action="" method="post" enctype="multipart/form-data">
+
+    <input type="hidden" name="id" value="{$data.id}">
+     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+       <td width="90" align="center">用户名</td>
+       <td>
+        <input type="text" name="username" value="{$data.username}" size="80" class="inpMain" />
+       </td>
+      </tr>
+
+       <tr>
+        <td align="center">头像</td>
+        <td><img src="__PUBLIC__/{$data.userimage}" /></td>
+        </tr>
+      <tr>
+       <td align="center">签名</td>
+       <td>
+        <input type="text" name="sign" value="{$data.sign}" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="center">性别</td>
+       <td>
+        <input type="text" name="sex" value="{$data.sex}" size="40" class="inpMain" />
+       </td>
+      </tr>
+     <tr>
+       <td align="center">生日</td>
+       <td>
+        <input type="text" name="birthday" value="{$data.birthday}" size="50" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="center">学校</td>
+       <td>
+        <input type="text" name="school" value="{$data.school}" size="40" class="inpMain" />
+       </td>
+      </tr> 
+      <tr>
+       <td align="center">积分</td>
+       <td>
+        <input type="text" name="integral" value="{$data.integral}" size="40" class="inpMain" />
+       </td>
+      </tr>
+       <td></td>
+       <td>
+        <input type="hidden" name="token" value="21307217" />
+        <input type="hidden" name="id" value="">
+        <input name="submit" class="btn" type="hidden"/>
+       </td>
+      </tr>
+     </table>
+    </form>
+                 
+ </div>
+
+ <div class="clear"></div>
+
+<div class="clear"></div> </div>
+
+</body>
+</html>

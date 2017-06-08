@@ -1,0 +1,50 @@
+
+ <div id="dcMain"> <!-- 当前位置 -->
+<div id="urHere"><a href="__MODULE__/Index/index.html">首页</a><b>></b><strong>评论管理</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3><a href="__MODULE__/Comment/lists.html" class="actionBtn">返回列表</a>查看评论</h3>
+   <form action="__MODULE__/Comment/add" method="post">
+      <input type="hidden" name="commentid" value="{$data.commentid}" >
+     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+     <tr>
+       <td width="80" align="center">分享id</td>
+       <td>
+        <input type="text" name="shareid" value="{$data.shareid}" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td width="80" align="center">评论人</td>
+       <td>
+        <input type="text" name="commentuserid" value="{$data.commentuserid}" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="center">评论内容</td>
+       <td>
+        <textarea name="commentcontent" cols="60" rows="4" class="textArea">{$data.commentcontent}</textarea>
+       </td>
+      </tr>
+      <tr>
+       <td align="center">评论时间</td>
+       <td>
+        <input type="text" name="commenttime" value="{$data.commenttime}" size="5" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <input type="hidden" name="token" value="25bfda40" />
+        <input type="hidden" name="cat_id" value="" />
+        <input name="submit" class="btn" type="submit" value="提交" />
+       </td>
+      </tr>
+     </table>
+    </form>
+                 
+ </div>
+
+ <div class="clear"></div>
+
+<div class="clear"></div> </div>
+
+</body>
+</html>

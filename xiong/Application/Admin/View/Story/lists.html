@@ -1,0 +1,51 @@
+
+ <div id="dcMain">
+   <!-- 当前位置 -->
+<div id="urHere"><a href="__MODULE__/Index/index.html">首页</a><b>></b><strong>故事管理</strong> </div>   
+<div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+        <h3><a href="__MODULE__/Story/addstory" class="actionBtn add">添加故事</a>故事列表</h3>
+  
+        <div id="list">
+    <form  action="__MODULE__/Story/delete">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+        <th width="" align="center"><input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
+        <th width="" align="center">ID</th>
+        <th align="center">故事名</th>
+        <th width="" align="center">内容</th>
+        <th width="" align="center">添加日期</th>
+        <th width="" align="center">操作</th>
+      </tr>
+
+      <volist name="story" id="vo">
+      <tr>
+        <td align="center"><input type="checkbox" name="storyid[]" value="{$vo.storyid}" class="checkbox"/></td>
+        <td align="center">{$vo.storyid}</td>
+        <td align="center">{$vo.storytitle}</td>
+        <td align="center">{$vo.storycontent|mb_substr=0,8,'utf-8'}</td>
+        <td align="center">{$vo.addtime}</td>
+        <td align="center">
+        <a href="__MODULE__/Story/editstory/storyid/{$vo.storyid}">编辑</a> | <a href="__MODULE__/Story/delete/storyid/{$vo.storyid}">删除</a>
+        </td>
+      </tr>
+      </volist>
+
+  </table>
+    </form>
+    </div>
+    <div class="clear"></div>
+    <div class="pager">
+    {$page}
+
+    </div>               
+    </div>
+ </div>
+
+ <div class="clear"></div>
+
+
+
+<div class="clear"></div> </div>
+
+</body>
+</html>

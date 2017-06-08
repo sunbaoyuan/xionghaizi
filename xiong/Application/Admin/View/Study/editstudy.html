@@ -1,0 +1,47 @@
+
+ <div id="dcMain"> <!-- 当前位置 -->
+<div id="urHere"><a href="__MODULE__/Index/index.html">首页</a><b>></b><strong>学习管理</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3><a href="__MODULE__/Study/lists.html" class="actionBtn">返回列表</a>编辑内容</h3>
+    <form action="lists.html" method="post">
+     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+       <td align="center">学习类型</td>
+       <td>
+        <select name="cat_id">
+         <option value="0">未分类</option>
+                  <option value="1">古诗</option>
+                  <option value="2">成语</option>
+                  <option value="3">汉字</option>
+                  <option value="4">数字</option>
+                  <option value="5">颜色</option>
+                  <option value="6">单词</option>
+                  <option value="7">蔬菜</option>
+                  <option value="8">水果</option>
+                  <option value="9">动物</option>
+       </td>
+      </tr>
+      <tr>
+       <td align="center">学习内容</td>
+       <td>
+        <textarea name="description" cols="60" rows="4" class="textArea"></textarea>
+       </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <input type="hidden" name="token" value="25bfda40" />
+        <input type="hidden" name="cat_id" value="" />
+        <input name="submit" class="btn" type="submit" value="提交" />
+       </td>
+      </tr>
+     </table>
+    </form>
+                 
+ </div>
+
+ <div class="clear"></div>
+
+<div class="clear"></div> </div>
+
+</body>
+</html>

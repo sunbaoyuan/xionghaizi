@@ -1,0 +1,57 @@
+
+ <div id="dcMain">
+   <!-- 当前位置 -->
+<div id="urHere"><a href="__MODULE__/Index/index.html">首页</a><b>></b><strong>用户管理</strong> </div>   
+<div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+        <h3><a href="__MODULE__/User/adduser" class="actionBtn add">添加用户</a>用户列表</h3>
+  
+        <div id="list">
+    <form action="__MODULE__/User/delete">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+        <th width="" align="center"><input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
+        <th width="" align="center">ID</th>
+        <th align="center">用户名</th>
+        <th align="center">签名</th>
+        <th align="center">性别</th>
+        <th align="center">生日</th>
+        <th align="center">学校</th>
+        <th width="" align="center">积分</th>
+        <th width="" align="center">添加日期</th>
+        <th width="" align="center">操作</th>
+      </tr>
+
+      <volist name="user" id="vo">
+      <tr>
+        <td align="center"><input type="checkbox" name="id[]" value="{$vo.id}" class="checkbox"/></td>
+        <td align="center">{$vo.id}</td>
+        <td align="center">{$vo.username}</td>
+        <td align="center">{$vo.sign}</td>
+        <td align="center">{$vo.sex}</td>
+        <td align="center">{$vo.birthday}</td>
+        <td align="center">{$vo.school}</td>
+        <td align="center">{$vo.integral}</td>
+        <td align="center">{$vo.jointime}</td>
+        <td align="center">
+        <a href="__MODULE__/User/edituser?id='{$vo['id']}'">查看</a> | <a href="__MODULE__/User/delete?id='{$vo['id']}'">删除</a>
+        </td>
+      </tr>
+      </volist>
+      </table>
+      <br/>
+      <div class="input-group pull-left form">
+        <button type="submit" class="btn btn-danger" style="background-color:#20B2AA;"> 批量删除</button>
+      </div>
+    </form>
+    </div>
+    <div class="clear"></div>
+      <div class="pager">
+                {$page}     
+      </div>                 
+    </div>
+ </div>
+
+</div>
+
+</body>
+</html>

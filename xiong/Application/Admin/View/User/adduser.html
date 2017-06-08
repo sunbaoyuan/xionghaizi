@@ -1,0 +1,82 @@
+
+ <div id="dcMain"> <!-- 当前位置 -->
+<div id="urHere"><a href="__MODULE__/Index/index.html">首页</a><b>></b><strong>用户管理</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3><a href="__MODULE__/User/lists" class="actionBtn">返回列表</a>用户列表</h3>
+    <form action="__MODULE__/User/doAdd" method="post"enctype="multipart/form-data">
+     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+       <td width="100" align="center">用户名</td>
+       <td id="nameParent">
+            <input type="text" name="username" value="" id="Username" size="80" class="inpMain" onblur="isUser(document.getElementById('Username').value);" onfocus="isUser1();"/>
+          </td>
+      </tr>
+      <tr>
+          <td align="center">头像</td>
+          <td>
+            <input type="file" name="userimage" size="38" class="inpFlie" />
+          </td>
+        </tr>
+      <tr>
+       <td align="center">密码</td>
+       <td>
+        <input type="password" name="pass" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="center">确认密码</td>
+       <td>
+        <input type="password" name="repass" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+      <td align="center">签名</td>
+        <td>
+          <textarea name="sign" cols="60" rows="4" class="textArea" ></textarea>
+        </td>
+      </tr>
+      <tr>
+       <td align="center">性别</td>
+       <td>
+        <select name="sex">
+         <option value="0">请选择</option>
+                  <option value="男">男</option>
+                  <option value="女">女</option>
+       </td>
+      </tr>
+      <tr>
+       <td align="center">生日</td>
+       <td>
+        <input type="text" name="birthday" size="5" class="inpMain" />
+       </td>
+      </tr>
+       <tr>
+       <td align="center">学校</td>
+       <td>
+        <input type="text" name="school" size="5" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="center">添加时间</td>
+       <td>
+        <input type="text" name="jointime" value="<?php echo date('Y-m-d H:i:s',time());?>" size="5" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <input type="hidden" name="token" value="5a58b748" />
+        <input type="submit" name="submit" class="btn" value="提交" />
+       </td>
+      </tr>
+     </table>
+    </form>
+                 
+ </div>
+
+ <div class="clear"></div>
+
+
+<div class="clear"></div> </div>
+
+</body>
+</html>
