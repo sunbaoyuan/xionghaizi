@@ -1,0 +1,60 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/xionghaizi/Public/front/css/jquery.mobile-1.4.5.min-1.css">
+
+<script src="/xionghaizi/Public/front/js/jquery-1.11.3.min.js"></script>
+<script src="/xionghaizi/Public/front/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<style>
+.ui-bar-f
+{
+background:rgba(144,238,144,0.5);
+}
+
+</style>
+
+<body>
+
+<div data-role="page" id="pageone">
+	<div data-role="header" data-theme="f" >
+  		<h1>编辑资料</h1>
+  		<a data-ajax="false" href="/xionghaizi/index.php/Home/Other/mine" style="border-radius:10px">返回</a>
+  	</div>
+
+  	<div data-role="content">
+    		<!-- <ul data-role="listview" data-inset="true"> -->
+      <form method="post" action="demo_form.php">
+        <div class="ui-field-contain">
+          <label for="image">选择头像：</label>
+         <input type="file" accept="image/*;capture=camera"><br/>
+
+          <label for="sign">签名：</label>
+          <input type="text" name="sign" id="sign"><br/>
+
+          <label for="sex">性别：</label>
+          <select name="sex" id="sex">
+            <option value="male">男</option>
+            <option value="female">女</option>
+          </select><br/>
+
+          
+
+          <label for="bday">生日：</label>
+          <input type="date" name="bday" id="bday"><br/>
+
+          <label for="school">学校:</label>
+          <input type="text" name="school" id="school">
+      </div>
+      <input type="submit" data-inline="true" value="保存">
+      </form>
+    </div>
+
+
+</div>
+
+</body>
+</html>

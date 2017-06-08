@@ -1,0 +1,40 @@
+[ 2017-05-25T08:18:54+08:00 ] 127.0.0.1 /xionghaizi/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.067411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.045989s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.046097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.023892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-05-25T17:14:17+08:00 ] 127.0.0.1 /xionghaizi/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.143453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.116998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.117107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.007027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.669471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.669567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
