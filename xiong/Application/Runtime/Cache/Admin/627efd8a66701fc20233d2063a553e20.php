@@ -101,9 +101,13 @@
       </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
   </table>
-    </form>
-    </div>
-    <div class="clear"></div>
+  <br/>
+  <div class="input-group pull-left form">
+    <button type="submit" class="btn btn-danger" style="background-color:#20B2AA;"> 批量删除</button>
+  </div>
+  </form>
+  </div>
+  <div class="clear"></div>
     <div class="pager">
     <?php echo ($page); ?>
 

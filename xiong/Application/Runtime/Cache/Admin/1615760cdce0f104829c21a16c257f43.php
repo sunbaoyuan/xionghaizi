@@ -78,7 +78,7 @@
         <h3>积分列表</h3>
   
         <div id="list">
-    <form name="action" method="post" action="#">
+    <form action="/xionghaizi/admin.php/Integral/delete">
     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
       <tr>
         <th width="" align="center"><input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
@@ -89,24 +89,28 @@
         <th width="" align="center">日期</th>
         <th width="" align="center">操作</th>
       </tr>
-
-      <tr>
-        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
-        <td align="center">5</td>
-        <td align="center">小明</a></td>
-        <td align="center">90</a></td>
-        <td align="center">4</a></td>
-        <td align="center">2013-06-26</td>
+      <?php if(is_array($integrallist)): $i = 0; $__LIST__ = $integrallist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+        <td align="center"><input type="checkbox" name="integralid[]" value="<?php echo ($vo["integralid"]); ?>" class="checkbox"/></td>
+        <td align="center"><?php echo ($vo["integralid"]); ?></td>
+        <td align="center"><?php echo ($vo["username"]); ?></td>
+        <td align="center"><?php echo ($vo["integralquantity"]); ?></td>
+        <td align="center"><?php echo ($vo["ranking"]); ?></td>
+        <td align="center"><?php echo ($vo["addtime"]); ?></td>
         <td align="center">
-        <a href="lookintegral.html">查看</a> | <a href="#">删除</a>
+        <a href="/xionghaizi/admin.php/Integral/lookintegral?id='<?php echo ($vo['integralid']); ?>'">查看</a> | <a href="/xionghaizi/admin.php/Integral/delete/integralid/<?php echo ($vo["integralid"]); ?>">删除</a>
         </td>
-      </tr>
+        </td>
+      </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
       </table>
+      <br/>
+      <div class="input-group pull-left form">
+        <button type="submit" class="btn btn-danger" style="background-color:#20B2AA;"> 批量删除</button>
+      </div>
     </form>
     </div>
     <div class="clear"></div>
-    <div class="pager">总计 5 个记录，共 1 页，当前第 1 页 | <a href="#">第一页</a> 上一页 下一页 <a href="#">最末页</a></div>               
+    <div class="pager"><?php echo ($page); ?></div>               
     </div>
  </div>
 

@@ -5,6 +5,7 @@
 <div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
     <h3><a href="__MODULE__/Challenge/addchallenge" class="actionBtn add">添加题目</a>题目列表</h3>
     <div id="list">
+     <form  action="__MODULE__/Challenge/delete">
     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
       <tr>
         <th width="" align="center"><input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
@@ -23,7 +24,7 @@
         <td align="center">{$vo.challengeid}</td>
         <td align="center">{$vo.typeccname}</td>
         <td align="center">{$vo.challengename}</td>
-        <td align="center">{$vo.challengecontent}</td>
+        <td align="center">{$vo.challengecontent|mb_substr=0,8,'utf-8'}</td>
         <td align="center">{$vo.challengeanswer}</td>
         <td align="center">{$vo.addtime}</td>
         <td align="center">
@@ -33,6 +34,10 @@
       </volist>
 
     </table>
+    <br/>
+      <div class="input-group pull-left form">
+        <button type="submit" class="btn btn-danger" style="background-color:#20B2AA;"> 批量删除</button>
+      </div>
     </form>
     </div>
     <div class="clear"></div>

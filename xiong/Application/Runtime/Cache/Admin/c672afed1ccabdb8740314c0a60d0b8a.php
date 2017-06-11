@@ -7,8 +7,20 @@
 <script type="text/javascript" src="/xionghaizi/Public/end/js/jquery.min.js"></script>
 <script type="text/javascript" src="/xionghaizi/Public/end/js/global.js"></script>
 
-
+<script type="text/javascript" src="/xionghaizi/Public/end/js/jquery.tab.js"></script>
+<script type="text/javascript" src="/xionghaizi/Public/end/js/jquery.autotextarea.js"></script>
 </head>
+<style type="text/css">
+    @media screen and (max-width: 1024px) {
+      .tableBasic th ,td,th input{
+        font-size: 10px;
+      }
+      .menu ul li a em{
+        font-size: 8px;
+      }
+    }
+</style>
+
 <body>
 <div id="dcWrap"> <div id="dcHead">
  <div id="head">
@@ -17,10 +29,10 @@
    <ul>熊孩子后台管理系统</p>
    </ul>
    <ul class="navRight">
-    <li class="noRight"><a href="#">您好，admin</a>
+    <li class="noRight"><a href="/xionghaizi/admin.php/Admin/editmanager">您好，admin</a>
      
     </li>
-    <li class="noRight"><a href="login.html">退出</a></li>
+    <li class="noRight"><a href="/xionghaizi/admin.php/Admin/login">退出</a></li>
    </ul>
   </div>
  </div>
@@ -28,75 +40,84 @@
 <!-- dcHead 结束 --> 
 <div id="dcLeft"><div id="menu">
  <ul class="top">
-  <li><a href="/xionghaizi/index.php/Admin/Index/index.html"><em style="text-align:center;">首页</em></a></li>
+  <li><a href="/xionghaizi/admin.php/Index/index.html"><em style="text-align:center;">首页</em></a></li>
  </ul>
 
 <ul>
-  <li><a href="/xionghaizi/index.php/Admin/Admin/manager.html"><em style="text-align:center;">管理员管理</em></a></li>
+  <li><a href="/xionghaizi/admin.php/Admin/manager.html"><em style="text-align:center;">管理员管理</em></a></li>
  </ul>
  <ul>
-  <li><a href="/xionghaizi/index.php/Admin/User/lists.html"><em style="text-align:center;">用户管理</em></a></li>
+  <li><a href="/xionghaizi/admin.php/User/lists.html"><em style="text-align:center;">用户管理</em></a></li>
  </ul>
 <ul>
-  <li><a href="/xionghaizi/index.php/Admin/Story/lists.html"><em style="text-align:center;">故事管理</em></a></li>
+  <li><a href="/xionghaizi/admin.php/Story/lists.html"><em style="text-align:center;">故事管理</em></a></li>
  </ul>
  <ul>
-  <li><a href="/xionghaizi/index.php/Admin/Challenge/lists.html"><em style="text-align:center;">挑战管理</em></a></li>
+  <li><a href="/xionghaizi/admin.php/Challenge/lists.html"><em style="text-align:center;">挑战管理</em></a></li>
  </ul>
  <ul>
-  <li><a href="/xionghaizi/index.php/Admin/Study/lists.html"><em style="text-align:center;">学习管理</em></a></li>
+  <li><a href="/xionghaizi/admin.php/Study/lists.html"><em style="text-align:center;">学习管理</em></a></li>
  </ul>
  <ul>
-  <li><a href="/xionghaizi/index.php/Admin/Coment/lists.html"><em style="text-align:center;">评论管理</em></a></li>
+  <li><a href="/xionghaizi/admin.php/Comment/lists.html"><em style="text-align:center;">评论管理</em></a></li>
  </ul>
  <ul>
-  <li><a href="/xionghaizi/index.php/Admin/Share/lists.html"><em style="text-align:center;">分享管理</em></a></li>
+  <li><a href="/xionghaizi/admin.php/Share/lists.html"><em style="text-align:center;">分享管理</em></a></li>
  </ul>
  <ul>
-  <li><a href="/xionghaizi/index.php/Admin/Integral/lists.html"><em style="text-align:center;">积分管理</em></a></li>
+  <li><a href="/xionghaizi/admin.php/Integral/lists.html"><em style="text-align:center;">积分管理</em></a></li>
  </ul>
 </div>
 </div>
 
 
  <div id="dcMain"> <!-- 当前位置 -->
-<div id="urHere"><a href="/xionghaizi/index.php/Admin/Index/index.html">首页</a><b>></b><strong>学习管理</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
-    <h3><a href="/xionghaizi/index.php/Admin/Study/lists.html" class="actionBtn">返回列表</a>编辑内容</h3>
-    <form action="lists.html" method="post">
-     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
-      <tr>
-       <td align="center">学习类型</td>
-       <td>
-        <select name="cat_id">
-         <option value="0">未分类</option>
-                  <option value="1">古诗</option>
-                  <option value="2">成语</option>
-                  <option value="3">汉字</option>
-                  <option value="4">数字</option>
-                  <option value="5">颜色</option>
-                  <option value="6">单词</option>
-                  <option value="7">蔬菜</option>
-                  <option value="8">水果</option>
-                  <option value="9">动物</option>
-       </td>
-      </tr>
-      <tr>
-       <td align="center">学习内容</td>
-       <td>
-        <textarea name="description" cols="60" rows="4" class="textArea"></textarea>
-       </td>
-      </tr>
-      <tr>
-       <td></td>
-       <td>
-        <input type="hidden" name="token" value="25bfda40" />
-        <input type="hidden" name="cat_id" value="" />
-        <input name="submit" class="btn" type="submit" value="提交" />
-       </td>
-      </tr>
-     </table>
+<div id="urHere"><a href="/xionghaizi/admin.php/Index/index.html">首页</a><b>></b><strong>学习管理</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3><a href="/xionghaizi/admin.php/Study/lists" class="actionBtn">返回列表</a>编辑内容</h3>
+    <form action="/xionghaizi/admin.php/Study/update" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="studyid" value="<?php echo ($study["studyid"]); ?>">
+
+      <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+        <tr>
+          <td align="center">学习类型</td>
+          <td>
+            <select name="scid" value="<?php echo ($study["scid"]); ?>">
+              <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i;?><option value="<?php echo ($t["scid"]); ?>">- <?php echo ($t["typescname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+            </select>
+          </td>
+        </tr>
+         <tr>
+          <td width="80" align="center">标题</td>
+          <td>
+            <input type="text" name="studyname" size="40" class="inpMain" value="<?php echo ($study["studyname"]); ?>" />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">作者</td>
+          <td>
+            <input type="text" name="author" size="40" class="inpMain" value="<?php echo ($study["author"]); ?>" />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">内容</td>
+          <td>
+            <textarea name="content" cols="60" rows="4" class="textArea"><?php echo ($study["studycontent"]); ?></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">修改时间</td>
+          <td>
+            <input type="text" name="addtime" size="5" class="inpMain" value="<?php echo date('Y-m-d H:i:s');?>" />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input name="submit" class="btn" type="submit" value="提交" />
+          </td>
+        </tr>
+      </table>
     </form>
-                 
  </div>
 
  <div class="clear"></div>

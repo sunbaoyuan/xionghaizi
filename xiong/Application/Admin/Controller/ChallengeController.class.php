@@ -33,7 +33,7 @@ class ChallengeController extends Controller {
 
 		$this->display();
 	}
-	//添加图书
+	//添加
 	public function doAdd(){
 		if (!IS_POST) {
 			exit("bad request请求");
@@ -48,18 +48,9 @@ class ChallengeController extends Controller {
 	}
 
 	//编辑修改
-	/*public function editchallenge(){
-        $challengeModel=D("challenge");
-        $id=$_GET['challengeid'];
-        $challenge=$challengeModel->find($id);
-        $this->assign('challenge',$challenge);
-
-        $this->display();
-    }*/
 	public function editchallenge(){
 		$challengeModel=M("Challenge");
-		// $id=$_GET['challengeId'];
-		$id=I('challengeId');
+		$id=I('challengeid');
 		$taglist=$challengeModel
 		->join('challengecategories ON challenge.ccid = challengecategories.ccid')
 		->select();
@@ -73,12 +64,12 @@ class ChallengeController extends Controller {
 	public function update(){
 		if (IS_POST) {
 			$model=M("challenge");
-			// $id=$_GET['challengeId'];
 			$id=I('ccid');
 			$data=$model->create();
 			dump($data);
 			if ($model->where("ccid=".$id)->save($data)) {
-				$this -> success("数据更新成功",U("challenge/lists"));
+				/*$this -> success("数据更新成功",U("Study/lists"));*/
+				$this->redirect('Challenge/lists',0);
 			}
 			else{
 				$this->error($model->getError());
@@ -86,13 +77,7 @@ class ChallengeController extends Controller {
 		}	
 	}
 
-
-
-
-
-
-
-	//删除题目
+	//删除
 	public function delete(){
 		//全部删除
         $id = $_GET['challengeid'];

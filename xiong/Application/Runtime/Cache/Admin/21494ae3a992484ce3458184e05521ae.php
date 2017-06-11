@@ -75,10 +75,10 @@
    <!-- 当前位置 -->
 <div id="urHere"><a href="index.html">首页</a><b>></b><strong>分享管理</strong> </div>   
 <div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
-        <h3><a href="add_share.html?rec=add" class="actionBtn add">添加分享</a>分享列表</h3>
+        <h3>分享列表</h3>
   
         <div id="list">
-    <form name="action" method="post" action="#">
+    <form action="/xionghaizi/admin.php/Share/delete">
     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
       <tr>
         <th width="" align="center"><input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
@@ -88,69 +88,27 @@
         <th width="" align="center">添加日期</th>
         <th width="" align="center">操作</th>
       </tr>
-
-      <tr>
-        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
-        <td align="center">5</td>
-        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
-        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
-        <td align="center">2013-06-26</td>
+      <?php if(is_array($sharelist)): $i = 0; $__LIST__ = $sharelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+        <td align="center"><input type="checkbox" name="shareid[]" value="<?php echo ($vo["shareid"]); ?>" class="checkbox"/></td>
+        <td align="center"><?php echo ($vo["shareid"]); ?></td>
+        <td align="center"><?php echo ($vo["username"]); ?></td>
+        <td align="center"><?php echo (mb_substr($vo["content"],0,8,'utf-8')); ?></td>
+      
+        <td align="center"><?php echo ($vo["addtime"]); ?></td>
         <td align="center">
-        <a href="edit_share.html">编辑</a> | <a href="#">删除</a>
-        </td>
-      </tr>
-
-      <tr>
-        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
-        <td align="center">4</td>
-        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
-        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
-        <td align="center">2013-06-26</td>
-        <td align="center">
-        <a href="edit_share.html">编辑</a> | <a href="#">删除</a>
-        </td>
-      </tr>
-
-       <tr>
-        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
-        <td align="center">3</td>
-        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
-        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
-        <td align="center">2013-06-26</td>
-        <td align="center">
-        <a href="edit_share.html">编辑</a> | <a href="#">删除</a>
-        </td>
-      </tr>
-
-       <tr>
-        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
-        <td align="center">2</td>
-        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
-        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
-        <td align="center">2013-06-26</td>
-        <td align="center">
-        <a href="edit_share.html">编辑</a> | <a href="#">删除</a>
-        </td>
-      </tr>
-
-       <tr>
-        <td align="center"><input type="checkbox" name="checkbox[]" value="15" /></td>
-        <td align="center">1</td>
-        <td align="center"><a href="product.php?rec=edit&id=5">XXX</a></td>
-        <td align="center">XXXXXXXXXXXXXXXXXX</a></td>
-        <td align="center">2013-06-26</td>
-        <td align="center">
-        <a href="edit_share.html">编辑</a> | <a href="#">删除</a>
-        </td>
-      </tr>
-
-                
+        <a href="/xionghaizi/admin.php/Share/lookshare?id='<?php echo ($vo['shareid']); ?>'">查看</a> | <a href="/xionghaizi/admin.php/Share/delete/shareid/<?php echo ($vo["shareid"]); ?>">删除</a>
+      </tr><?php endforeach; endif; else: echo "" ;endif; ?>     
 
       </table>
+      <br/>
+      <div class="input-group pull-left form">
+        <button type="submit" class="btn btn-danger" style="background-color:#20B2AA;"> 批量删除</button>
+      </div>
     </form>
     </div>
     <div class="clear"></div>
-    <div class="pager">总计 5 个记录，共 1 页，当前第 1 页 | <a href="product.php?page=1">第一页</a> 上一页 下一页 <a href="product.php?page=1">最末页</a></div>               </div>
+    <div class="pager"><?php echo ($page); ?></div>               
+    </div>
  </div>
 
  <div class="clear"></div>

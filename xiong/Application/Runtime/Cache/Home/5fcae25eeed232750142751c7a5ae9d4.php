@@ -29,7 +29,7 @@
 
     	<div class="content">
     		<ul data-role="listview" data-inset="true">
-    			<li>昵称：我的昵称</li>
+    			<li>昵称：<?php echo ($list["username"]); ?></li>
     			<li>签名：今天很开心</li>
     			<li>性别：男</li>
         		<li>生日：2000/02/02</li>

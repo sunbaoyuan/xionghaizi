@@ -51,7 +51,7 @@
 					<ul>
 				    <li><a href="#" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-active">首页</a></li>
 				    <li><a href="/xionghaizi/index.php/Home/Other/xiaoxi" rel="external" data-role="button" data-icon="mail" data-iconpos="notext">消息</a></li>
-					<li><a href="/xionghaizi/index.php/Home/Other/integral" rel="external" data-role="button" data-icon="star" data-iconpos="notext">积分榜</a></li>
+					<li><a href="/xionghaizi/index.php/Home/Integral/integral" rel="external" data-role="button" data-icon="star" data-iconpos="notext">积分榜</a></li>
 					<li><a href="/xionghaizi/index.php/Home/Other/mine" rel="external" data-role="button" data-icon="user" data-iconpos="notext">我的</a></li>
 					</ul>
 				</div>

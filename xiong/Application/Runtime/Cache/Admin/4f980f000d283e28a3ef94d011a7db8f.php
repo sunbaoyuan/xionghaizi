@@ -73,35 +73,40 @@
 
  <div id="dcMain"> <!-- 当前位置 -->
 <div id="urHere"><a href="/xionghaizi/admin.php/Index/index.html">首页</a><b>></b><strong>学习管理</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
-    <h3><a href="/xionghaizi/admin.php/Study/lists.html" class="actionBtn">返回列表</a>内容列表</h3>
-    <form action="lists.html" method="post">
+    <h3><a href="/xionghaizi/admin.php/Study/lists" class="actionBtn">返回列表</a>内容列表</h3>
+    <form method="post" action="/xionghaizi/admin.php/Study/doAdd" enctype="multipart/form-data">
      <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
       <tr>
        <td align="center">学习类型</td>
        <td>
-        <select name="cat_id">
-         <option value="0">未分类</option>
-                  <option value="1">古诗</option>
-                  <option value="2">成语</option>
-                  <option value="3">汉字</option>
-                  <option value="4">数字</option>
-                  <option value="5">颜色</option>
-                  <option value="6">单词</option>
-                  <option value="7">蔬菜</option>
-                  <option value="8">水果</option>
-                  <option value="9">动物</option>
+        <select name="scid">
+            <!-- <option value="0">未分类</option> -->
+              <?php if(is_array($tags)): $i = 0; $__LIST__ = $tags;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$t): $mod = ($i % 2 );++$i;?><option value="<?php echo ($t["scid"]); ?>">- <?php echo ($t["typescname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+          </select>
        </td>
+      </tr>
+      <tr>
+        <td align="center">标题</td>
+        <td>
+          <input type="text" name="studyname" cols="60" rows="4" class="inpMain" >
+        </td>
+      </tr>
+      <tr>
+        <td align="center">作者</td>
+        <td>
+          <input type="text" name="author" size="40" class="inpMain"  />
+        </td>
       </tr>
       <tr>
        <td align="center">学习内容</td>
        <td>
-        <textarea name="description" cols="60" rows="4" class="textArea"></textarea>
+        <textarea name="studycontent" cols="60" rows="4" class="textArea"></textarea>
        </td>
       </tr>
       <tr>
        <td align="center">添加时间</td>
        <td>
-        <input type="text" name="sort" value="2017-05-16" size="5" class="inpMain" />
+        <input type="text" name="addtime" value="<?php echo date('Y-m-d H:i:s');?>" size="5" class="inpMain"  />
        </td>
       </tr>
       <tr>

@@ -77,6 +77,7 @@
 <div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
     <h3><a href="/xionghaizi/admin.php/Challenge/addchallenge" class="actionBtn add">添加题目</a>题目列表</h3>
     <div id="list">
+     <form  action="/xionghaizi/admin.php/Challenge/delete">
     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
       <tr>
         <th width="" align="center"><input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
@@ -94,7 +95,7 @@
         <td align="center"><?php echo ($vo["challengeid"]); ?></td>
         <td align="center"><?php echo ($vo["typeccname"]); ?></td>
         <td align="center"><?php echo ($vo["challengename"]); ?></td>
-        <td align="center"><?php echo ($vo["challengecontent"]); ?></td>
+        <td align="center"><?php echo (mb_substr($vo["challengecontent"],0,8,'utf-8')); ?></td>
         <td align="center"><?php echo ($vo["challengeanswer"]); ?></td>
         <td align="center"><?php echo ($vo["addtime"]); ?></td>
         <td align="center">
@@ -103,6 +104,10 @@
       </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
     </table>
+    <br/>
+      <div class="input-group pull-left form">
+        <button type="submit" class="btn btn-danger" style="background-color:#20B2AA;"> 批量删除</button>
+      </div>
     </form>
     </div>
     <div class="clear"></div>

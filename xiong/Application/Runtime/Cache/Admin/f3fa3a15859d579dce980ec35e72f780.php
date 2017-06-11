@@ -100,11 +100,8 @@
       <tr>
        <td align="center">答案</td>
        <td>
-        <select name="cat_id">
-         <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
+        <textarea name="challengeanswer" cols="60" rows="4" class="textArea"><?php echo ($challenge["challengeanswer"]); ?></textarea>
+      </td>
       </tr>
       <tr>
        <td align="center">修改时间</td>

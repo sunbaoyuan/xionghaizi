@@ -75,7 +75,7 @@
    <!-- 当前位置 -->
 <div id="urHere"><a href="/xionghaizi/admin.php/Index/index.html">首页</a><b>></b><strong>评论管理</strong> </div>   
 <div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
-    <h3><a href="/xionghaizi/admin.php/Comment/add" class="actionBtn add">添加评论</a>评论列表</h3>
+    <h3>评论列表</h3>
 
     <div id="list">
     <form action="/xionghaizi/admin.php/Comment/delete">
