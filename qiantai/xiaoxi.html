@@ -29,6 +29,7 @@
 			 	
 			 }
 			 function addli(){
+				 var one=document.getElementById("lione");
 			 	var li=document.createElement("li");
 			 	li.className="list0";
 			 	var html='<div class="head">'+'<img src="images/1.jpg" alt=""/>'+'</div>'
@@ -44,7 +45,7 @@
 			 	+'</div>'
 			 	+'</div>';
 			 	li.innerHTML=html;
-			 	document.getElementById("pn").appendChild(li);
+				 document.getElementById("pn").insertBefore(li,one);
 
 			 }
     	</script>
@@ -65,7 +66,7 @@
 	        	
 	            <div id="content1">
 	       		<ul id="pn">
-				    <li class="list0">
+				    <li class="list0" id="lione">
 				       
 				       <div class="head"><img src="images/1.jpg" alt=""/></div>
 				       <div class="content">
