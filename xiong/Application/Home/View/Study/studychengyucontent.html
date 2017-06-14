@@ -1,0 +1,51 @@
+{__NOLAYOUT__}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>挑战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="__PUBLIC__/front/css/jquery.mobile-1.4.5.min-1.css" />
+		<link rel="stylesheet" href="__PUBLIC__/front/css/study_chengyu.css" />
+    	<script src="__PUBLIC__/front/js/jquery-2.2.2.js"></script>
+    	<script src="__PUBLIC__/front/js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>  	
+	    <div data-role="page" id="ten" class="bg">
+	        <div data-role="header" id="col" data-position="fixed">
+	            <h1 style="color:white">学成语</h1>
+	            <a href="__MODULE__/Study/study_chengyu" data-role="button" onclick="myrefresh()">返回</a>
+	        </div>
+	        <div data-role="content" id="cont">
+	        	<div id="Result9" class="result">
+	        		<p class="cheng">{$study.studyname}         .</p>
+	        		<p>{$study.studycontent}</p>
+	        		<span>{$study.sentence}</span>
+	        	</div>
+	        	<div style="margin-top:1%;width:100%">
+	        		<a href="__MODULE__/Study/studychengyucontent?studyid=8" data-role="button" data-inline="true" style="border-radius:100px;width:50%;margin-left:22%;background:rgba(255,255,255,0.3);" onclick="myrefresh()">下一个</a>
+	        	</div>
+
+
+		        <script src="__PUBLIC__/front/js/jQuery/jQuery-2.1.4.min.js"></script>
+	            <script src="__PUBLIC__/front/js/speech/jQuery.speech.min.js"></script>
+	            <script>
+	            	
+	                $('#Result9').speech({
+	                    "speech": true,//点击播放
+	                    //"speech": false,自动播放
+	                    "speed": 0,
+	                    "sWidth": 16, //链接按钮的宽度			
+						"sHeight": 13, //链接按钮的高度		
+	                    "bg": "__PUBLIC__/front/images/speech.png"
+	                });
+					
+					function myrefresh(){
+						window.location.reload();
+					}
+	            </script>
+	        </div>
+
+	        
+	    </div> 
+	</body>
+</html>

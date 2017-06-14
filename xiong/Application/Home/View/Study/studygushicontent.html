@@ -1,0 +1,54 @@
+{__NOLAYOUT__}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>挑战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="__PUBLIC__/front/css/jquery.mobile-1.4.5.min-1.css" />
+
+    	<link rel="stylesheet" href="__PUBLIC__/front/css/study_gushi.css" />
+    	<script src="__PUBLIC__/front/js/jquery-2.2.2.js"></script>
+    	<script src="__PUBLIC__/front/js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+	    <div data-role="page" id="one" class="bg">
+	        <div data-role="header" id="col" data-position="fixed">
+	            <h1 style="color:white">学古诗</h1>
+	            <a href="__MODULE__/Study/study_gushi.html" data-role="button" onclick="myrefresh()">返回</a>
+	        </div>
+	        	
+	        <div data-role="content" id="cont">
+	        	<div id="Result9" class="content">
+	        		<h2 class="h2" name="studyname">{$study.studyname}     .</h2>
+	        		<h5 class="h5" id="a10" name="author">作者：{$study.author}     .</h5>
+	        		<p><span class="a">{$study.studycontent|mb_substr=0,10,'utf-8'}</span></p>
+	        		<p><span class="a">{$study.studycontent|mb_substr=10,10,'utf-8'}</span></p>
+	        		<p><span class="a">{$study.studycontent|mb_substr=20,10,'utf-8'}</span></p>
+	        		<span class="a">{$study.studycontent|mb_substr=30,10,'utf-8'}</span>
+	        	</div>
+	        	<div style="margin-top:1%;width:100%">
+	        		<!-- <a href="#one" data-role="button" data-inline="true" style="border-radius:100px;width:20%;margin-left:21%;background:rgba(255,255,255,0.3);" onclick="myrefresh()">上一首</a> -->
+	        		<a href="__MODULE__/Study/studygushicontent?studyid=2" data-role="button" data-inline="true" style="border-radius:100px;width:50%;margin-left:22%;background:rgba(255,255,255,0.3);" onclick="myrefresh()">下一首</a>
+	        	</div>
+
+		        <script src="__PUBLIC__/front/js/jQuery/jQuery-2.1.4.min.js"></script>
+	            <script src="__PUBLIC__/front/js/speech/jQuery.speech.min.js"></script>
+	            <script>
+	                $('#Result9').speech({
+	                    "speech": true,//点击播放
+	                    //"speech": false,自动播放
+	                    "speed": 0,
+	                    "sWidth": 16, //链接按钮的宽度			
+						"sHeight": 13, //链接按钮的高度		
+	                    "bg": "__PUBLIC__/front/images/speech.png"
+	                });
+					
+					function myrefresh(){
+						window.location.reload();
+					}
+	            </script>
+	    	</div>
+	
+
+	</body>
+</html>
