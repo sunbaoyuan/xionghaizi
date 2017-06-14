@@ -11,28 +11,21 @@
 	</head>
 	<body>
 
-		<div data-role="page" id="pageone"> 
-
+		<div data-role="page" id="pageone">
 	        <div data-role="header" id="col" data-position="fixed">
 	            <h1 style="color:black">学成语</h1>
 	            <a href="__MODULE__/Study/study" data-role="button" data-ajax="false">返回</a>
 	        </div>
-
 	        <div data-role="content">
-	        	
-
 	        	<div id="story">
-	        		
 	        		<ul  data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="搜索">
 	        		<volist name="studychengyu" id="vo">
 				  		<li>
-				    		<p>
-				    		<a href="__MODULE__/Study/studychengyucontent?studyid={$vo.studyid}">{$vo.studyname}&nbsp;&nbsp;&nbsp;. . . . . . . . . . . . . . .</a></p>
+				    		<p><a href="__MODULE__/Study/studychengyucontent?studyid={$vo.studyid}">{$vo.studyname}&nbsp;&nbsp;&nbsp;. . . . . . . . . . . . . . .</a></p>
 					  	</li>
 					</volist>
 	        	</div>
 	        </div>
-	    </div> 
-
+	    </div>
 	</body>
 </html>
