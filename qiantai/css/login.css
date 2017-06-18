@@ -1,46 +1,50 @@
-			#col{
-    			background:rgba(0,0,0,0.0);
-    			border: none;
-    		}
-    		#pageone{
-    			background-image: url(../images/2.jpg);
-    			background-size: cover;
+#col{
+/*              background-color: #99FF99;*/
+                background:rgba(0,0,0,0.0);
+                border: none;
+            }
+            #pageone{
+                background-image: url(../images/lg.jpg);
+                background-size: cover;
                 height: 100%;
-    		}
-    		#img{
+            }
+            #img{
+                width: 120;
+                height: 120;
+                border:2px solid white ;
+                border-radius: 100px;
+                margin-top: 13%;
+                margin-left: 35%;
+            }
+            #text{
+                width: 70%;
+                border-bottom:1px solid gray;
+                margin-left: 15%;
+                margin-top: 10%;
+                background:url(../images/userbg.png) no-repeat 0 center;
+            }
+            
+            #text1{
+                width: 70%;
+                border-bottom:1px solid gray;
+                margin-left: 15%;
+                margin-top: 12%;
+                background:url(../images/pswbg.png) no-repeat 0 center;
+            }
+            #checkbox{
+                width: 15px;
+                height: 15px;
 
-			    margin-top: 13%;
-			    margin-left: 35%;
-    		}
-    		#text{
-    			width: 70%;
-    			border-bottom:1px solid gray;
-    			margin-left: 15%;
-    			margin-top: 6%;
-    			background:url(../images/userbg.png) no-repeat 0 center;
-    		}
-    		
-    		#text1{
-    			width: 70%;
-    			border-bottom:1px solid gray;
-    			margin-left: 15%;
-    			margin-top: 8%;
-    			background:url(../images/pswbg.png) no-repeat 0 center;
-    		}
-    		#checkbox{
-    			width: 15px;
-    			height: 15px;
-
-    		}
-    		::-webkit-input-placeholder{
-    			color:white;
-    		}
-    		:-moz-placeholder{
-    			color: white;
-    		}
-    		::-moz-placeholder{
-    			color: white;
-    		}
-    		:-ms-input-placeholder{
-    			color: white;
-    		}
+            }
+            ::-webkit-input-placeholder{
+                color:white;
+            }
+            :-moz-placeholder{
+                color: white;
+            }
+            ::-moz-placeholder{
+                color: white;
+            }
+            :-ms-input-placeholder{
+                color: white;
+            }

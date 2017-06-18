@@ -1,58 +1,38 @@
-            #col{
-    			/*background-color: #99FF99;*/
-    			background:rgba(80,80,80,0.3);
-    		}
-    		#pageone{
-    			background-image: url(../images/challengebg.jpg);
-    			background-size: cover;
-    		}
-    		a{
-    			text-decoration: none;
-    		}
-    		.gushi{
-    			float: left;
-    			margin-left:38.5%;
-    			margin-top:56%;
-    			font-size:20px;
-    			color:black;
-    			width:25%;
-    			height:110px;
-    			border:1px solid rgba(255,255,255,0);
-    		}
-    		.shuxue{
-                float: left;
-    			margin-left:11%;
-                margin-top: 1%;
-    			font-size:20px;
-    			color:black;
-    			width:25%;
-    			height:110px;
-    			border:1px solid rgba(255,255,255,0);
-    		}
-    		.yingyu{
-                float: left;
-                margin-left: 30%;
-                margin-top: 1%;
-    			font-size:20px;
-    			color:black;
-    			width:25%;
-    			height:110px;
-    			border:1px solid rgba(255,255,255,0);
-    		}
-    		.chengyu{
-                float: left;
-                margin-top: 2%;
-                margin-left: 38%;
-    			font-size:20px;
-    			color:black;
-    			width:25%;
-    			height:110px;
-    			border:1px solid rgba(255,255,255,0);
-    		}
-    		.div{
-    			width:40%;
-    			height:25px;
-    			border:1px solid rgba(255,255,255,0);
-    			margin-top:85px;
-    			margin-left:31%;
-    		}
+ #col{
+                /*background-color: #99FF99;*/
+                background:rgba(0,0,0,0.1);
+            }
+            #pageone{
+                background-image: url(../images/tiaozhan.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #wenzi{
+                width: 90%;
+                height: 50px;
+                margin: 0 auto;
+            }
+            #watch{
+                width:80%;height:400px;
+                background-image:url(../images/watchbg.gif) ;
+                margin:0 auto;margin-top: 2%;
+                background-repeat: no-repeat;
+
+            }
+            #watch a{
+                text-decoration: none;
+                color: black;
+            }
+            #gushi{
+                width:30%;height:90px;float:left;margin-top:19%;margin-left:19%;
+            }
+            #shuxue{
+                width:30%;height:90px;float:left;margin-top:27%;margin-left:10%;
+            }
+            #yingyu{
+                width:30%;height:90px;float:left;margin-top:27%;margin-left:19%;
+            }
+            #chengyu{
+                width:30%;height:90px;float:left;margin-top:19%;margin-left:10%;
+            }
+            
