@@ -1,62 +1,39 @@
-#pageone{
-    			background-image: url(../images/body.jpg);
-    			background-repeat: no-repeat;
-    			background-size: cover;
-    		}
-    		#col{
-    			/*background-color: #99FF99;*/
-                background:rgba(144,238,144,0.5);
-    		}
-    		#one{
-    			width: 32%;
-    			height: 180px;
-    			background-color: pink;
-    			opacity:0.5;
-    			float: left;
-    			margin-top: 23%;
-    			margin-left: 15%;
-    		}
-    		#two{
-    			width: 32%;
-    			height: 180px;
-    			background-color: blue;
-    			opacity:0.5;
-    			float: left;
-    			margin-top: 23%;
-    			margin-left: 6%;
-    		}
-    		#three{
-    			width: 60%;
-    			height: 105px;
-    			background-color: red;
-    			opacity:0.5;
-    			float: left;
-    			margin-top: 3%;
-    			margin-left: 20%;
-    		}
-    		#cont{
-    			text-align: center;
-    			font-size: 30px;
-    		}
-    		#cont p{
-    			color: black;
-    		}
-    		#text{
-    		transform:rotate(-25deg);
-    		float: left;
-    		margin-left: 17%;
-    		margin-top: 11%;
-    		}
-    		#text p{
-    			text-decoration: underline;
-    			text-shadow:7px 3px 5px black;
-    		}
-    		#text1{
-    		transform:rotate(8deg);
-    		float: left;
-    		margin-left: 12%;
-    		margin-top: 17%;
-    		}
-    		#text1 p{
-    			text-shadow:3px 7px 5px black;
-    		}
+           #pageone{
+            background-image: url(../images/index.jpg);
+            background-size: cover;
+            }
+            #col{
+                background-color: rgba( 0,0,0,0.05);
+            }
+            #one{
+                width: 20%;
+                height: 180px;
+                border-radius: 10px;
+                background-color: rgba(  0,0,255,0.3);
+                float: left;
+                margin-left: 15%;
+            }
+            #two{
+                width: 20%;
+                height: 180px;
+                border-radius: 10px;
+                background-color: rgba(  0,0,255,0.3);
+                float: left;
+                margin-left: 6%;
+            }
+            #three{
+                width: 20%;
+                height: 180px;
+                border-radius: 10px;
+                background-color: rgba(  0,0,255,0.3);
+                float: left;
+                margin-left: 6%;
+            }
+            #cont{
+                text-align: center;
+                font-size: 22px;
+            }
+            #cont p{
+                color: black;
+            }
+            
